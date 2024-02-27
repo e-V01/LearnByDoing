@@ -13,6 +13,7 @@
 		9E1B5CBF2B8E131A00E989B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B5CBE2B8E131A00E989B8 /* Preview Assets.xcassets */; };
 		9E1B5CC62B8E15DE00E989B8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B5CC52B8E15DE00E989B8 /* Launch Screen.storyboard */; };
 		9E1B5CC82B8E189600E989B8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B5CC72B8E189600E989B8 /* CardView.swift */; };
+		9E1B5CCA2B8E1E1400E989B8 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B5CC92B8E1E1400E989B8 /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9E1B5CBE2B8E131A00E989B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E1B5CC52B8E15DE00E989B8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9E1B5CC72B8E189600E989B8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9E1B5CC92B8E1E1400E989B8 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				9E1B5CBD2B8E131A00E989B8 /* Preview Content */,
 				9E1B5CC52B8E15DE00E989B8 /* Launch Screen.storyboard */,
 				9E1B5CC72B8E189600E989B8 /* CardView.swift */,
+				9E1B5CC92B8E1E1400E989B8 /* CardModel.swift */,
 			);
 			path = LearnByDoing;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E1B5CBA2B8E131900E989B8 /* ContentView.swift in Sources */,
+				9E1B5CCA2B8E1E1400E989B8 /* CardModel.swift in Sources */,
 				9E1B5CC82B8E189600E989B8 /* CardView.swift in Sources */,
 				9E1B5CB82B8E131900E989B8 /* LearnByDoingApp.swift in Sources */,
 			);
