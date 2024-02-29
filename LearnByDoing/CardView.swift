@@ -13,6 +13,8 @@ struct CardView: View {
     @State private var moveDownward: Bool = false
     @State private var moveUpward: Bool = false
     
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    
 //    var gradient: [Color] = [Color("Color01"), Color("Color02")]
     var body: some View {
         ZStack {
@@ -35,6 +37,7 @@ struct CardView: View {
             
             Button {
                 playSound(sound: "sound-chime", type: "mp3")
+                self.hapticImpact.impactOccurred()
             } label: {
                 HStack {
                     Text(card.callToAction.uppercased())
