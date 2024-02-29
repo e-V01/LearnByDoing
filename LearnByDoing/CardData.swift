@@ -14,7 +14,7 @@ Card(title: "SwiftUI",
      headline: "Better apps. Less code.",
      imageName: "developer-no1", 
      callToAction: "Design",
-     message: "Indto to modern way to design interfaces for any Apple devices", 
+     message: "Intro into modern way to design interfaces for any Apple devices",
      gradientColors: [Color("Color01"),
                       Color("Color02")]),
 Card(
