@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct CardView: View {
-    var gradient: [Color] = [Color("Color01"), Color("Color02")]
+    var card: Card
+    
+//    var gradient: [Color] = [Color("Color01"), Color("Color02")]
     var body: some View {
         ZStack {
-            Image("developer-no1")
+            Image(card.imageName)
             VStack {
-                Text("SwiftUI")
+                Text(card.title)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundStyle(Color.white)
                     .multilineTextAlignment(.center)
                 
-                Text("Better apps. Less code.")
+                Text(card.headline)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .italic()
@@ -31,7 +33,7 @@ struct CardView: View {
                 print("Button")
             } label: {
                 HStack {
-                    Text("Learn".uppercased())
+                    Text(card.callToAction.uppercased())
                         .fontWeight(.heavy)
                         .foregroundStyle(Color.white)
                         .tint(Color.white)
@@ -42,14 +44,14 @@ struct CardView: View {
                 }
                 .padding(.vertical)
                 .padding(.horizontal, 24)
-                .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .leading, endPoint: .trailing))
+                .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .leading, endPoint: .trailing))
                 .clipShape(RoundedRectangle(cornerRadius: 100))
                 .shadow(color: Color("ColorShadow"), radius: 6, x: 0, y: 3)
             }
             .offset(y: 215)
         }
         .frame(width: 335, height: 545)
-        .background(LinearGradient(gradient: Gradient(colors: gradient),
+        .background(LinearGradient(gradient: Gradient(colors: card.gradientColors),
                                    startPoint: .top,
                                    endPoint: .bottom))
         .clipShape(RoundedRectangle(cornerRadius: 16))
@@ -58,6 +60,6 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView()
+    CardView(card: cardData[0])
         .previewLayout(.sizeThatFits)
 }
