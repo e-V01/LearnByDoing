@@ -10,7 +10,7 @@ import SwiftUI
 // MARK: CARD DATA
 
 let cardData: [Card] = [
-Card(title: "SwfitUI",
+Card(title: "SwiftUI",
      headline: "Better apps. Less code.",
      imageName: "developer-no1", 
      callToAction: "Design",
@@ -18,7 +18,7 @@ Card(title: "SwfitUI",
      gradientColors: [Color("Color01"),
                       Color("Color02")]),
 Card(
-    title: "iOS 14",
+    title: "iOS 18",
     headline: "Dramatic new look.",
     imageName: "developer-no2",
     callToAction: "Discover",
@@ -50,7 +50,7 @@ Card(
     gradientColors: [Color("Color09"), Color("Color10")]
   ),
   Card(
-    title: "Xcode 12",
+    title: "Xcode 17",
     headline: "The best tool you need to build apps.",
     imageName: "developer-no6",
     callToAction: "Develop",
